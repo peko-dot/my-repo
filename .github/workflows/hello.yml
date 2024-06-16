@@ -1,5 +1,12 @@
 name: Hello # ワークフロー名
-on: push # イベント
+on: # イベント
+  workflow_dispatch:
+      inputs:
+        greeting: # 入力パラメータ名
+          type: string
+          default: Hello
+          required: true
+          description: A cheerful word
 jobs:
   hello: # ジョブID
     runs-on: ubuntu-latest # ランナー
