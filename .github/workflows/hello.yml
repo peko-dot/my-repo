@@ -11,5 +11,4 @@ jobs:
   hello: # ジョブID
     runs-on: ubuntu-latest # ランナー
     steps:
-      - run: echo "Hello, World" # シェルコマンド
-      - uses: actions/checkout@v4 # アクションの呼び出し
+      - run: echo "${{ inputs.greeting }}" # 入力パラメータ「greeting」の参照
