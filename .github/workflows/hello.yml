@@ -1,4 +1,4 @@
-name: Hello # ワークフロー名
+name: Manual # ワークフロー名
 on: # イベント
   workflow_dispatch:
       inputs:
